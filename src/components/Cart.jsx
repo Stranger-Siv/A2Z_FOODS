@@ -59,7 +59,7 @@ const Cart = () => {
           <hr className="w-[90vw] lg:w-[18vw] my-2" />
           <button
             onClick={() => navigate("/success")}
-            className="bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-5"
+            className="bg-red-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-5"
           >
             Checkout
           </button>
@@ -67,8 +67,8 @@ const Cart = () => {
       </div>
       <FaShoppingCart
         onClick={() => setActiveCart(!activeCart)}
-        className={`rounded-full bg-white shadow-md text-5xl p-3 fixed bottom-4 right-4 ${
-          totalQty > 0 && "animate-bounce delay-500 transition-all"
+        className={`rounded-full bg-white shadow-md text-5xl p-3 fixed bottom-4 cursor-pointer right-4 ${
+          totalQty > 0 && "animate-bounce delay-500 transition-all text-red-400"
         } `}
       />
     </>
